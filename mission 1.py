@@ -11,4 +11,4 @@ def get_smartest(heroes_list, encoding='utf8'):
                 smartest_hero_dict[smartest_hero] = intelligence
     return max(smartest_hero_dict, key=smartest_hero_dict.get)
 
-print(f"Ñàìûé óìíûé ñóïåðãåðîé: {get_smartest(['Hulk', 'Captain America', 'Thanos'])}")
+print(f"Самый умный супергерой: {get_smartest(['Hulk', 'Captain America', 'Thanos'])}")
