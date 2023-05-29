@@ -1,6 +1,6 @@
 import requests
 
-def get_smartest(heroes_list):
+def get_smartest(heroes_list, encoding='utf8'):
     url = "https://akabab.github.io/superhero-api/api/all.json"
     data = requests.get(url)
     smartest_hero_dict = {}
@@ -11,4 +11,4 @@ def get_smartest(heroes_list):
                 smartest_hero_dict[smartest_hero] = intelligence
     return max(smartest_hero_dict, key=smartest_hero_dict.get)
 
-print(f"Самый умный супергерой: {get_smartest(['Hulk', 'Captain America', 'Thanos'])}")
+print(f"Г‘Г Г¬Г»Г© ГіГ¬Г­Г»Г© Г±ГіГЇГҐГ°ГЈГҐГ°Г®Г©: {get_smartest(['Hulk', 'Captain America', 'Thanos'])}")
